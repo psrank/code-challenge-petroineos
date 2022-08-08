@@ -53,7 +53,7 @@ public class TradeExtractor : ITradeExtractor
         await _csvWriter.WriteToFile(basePath, aggregatedRecords);
         
         
-        await Task.Delay(4000);
+       // await Task.Delay(4000);
         _logger.LogDebug("--->! Task on thread {0} finished. Run date {1}",
             Thread.CurrentThread.ManagedThreadId, extractDateTime.ToLongTimeString());
     }
